@@ -1407,12 +1407,12 @@ nav a {
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: 120px;
+  bottom: 100px;
 }
 
 @media  (min-width:1200px) and (max-width: 1399px) {
   .Header-logo {
-    bottom: 80px;
+    bottom: 70px;
 
   }
 }
