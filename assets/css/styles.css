@@ -9,7 +9,6 @@
 # Dashboard
 # Footer Start
 # Responsiveness Start
-# Bottom To top Scroll 
 
 ------------- List Of Table ----------*/
 
@@ -1771,9 +1770,7 @@ ul.pr_list {
     color: #101114;
     line-height: 34px;
 }
-div#clOne{
-    /* padding: 36px 18px 24px 18px; */
-}
+
 
 .pr-wrap {
     margin-bottom: 2rem;
@@ -2577,9 +2574,7 @@ display:none;
     justify-content: center;
 }
 
-.Home-projects-caption h3 , h1.big-header-capt {
 
-}
 .hero-banner p{
  font-size: 16px;
  line-height: 26px;
@@ -4707,11 +4702,6 @@ button.accordion-button {
   border-radius: 0;
 }
 
-.accordion-item:has(.accordion-collapse) {
-
-}
 
 
-/* .accordion-button{
-  border: 0.5px solid #D5B887;
-} */
+
