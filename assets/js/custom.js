@@ -221,6 +221,8 @@
 			$('.compare-slide-menu').addClass('active');
 		});
 		
+		$(document).ready(function() {
+
 		// our-Founder
 		$('#meet-team').slick({
 		  slidesToShow: 2.16,
@@ -254,46 +256,25 @@
 
 
 		// our-Founder
-		$('#meet-team').slick({
-			slidesToShow: 2.16,
-			infinite: false,
-			dots: true,
-			arrows:false,
-			autoplay:true,
-			autoplaySpeed:2000,
+		$('#partnerlogos').slick({
+			slidesToShow: 5,             // Show 5 items at once
+			slidesToScroll: 1,           // Scroll 1 item at a time
+			autoplay: true,              // Enable autoplay
+			autoplaySpeed: 1000,         // Change slides every 2 seconds
+			infinite: true,              // Enable infinite looping
+			arrows: false,               // Disable next/previous arrows
+			dots: false,                 // Disable dots navigation
+			centerMode: false,           // Do not center items
+			variableWidth: false,        // Ensure equal width for all items
+			speed: 500,                  // Transition speed
+			easing: 'linear',            
 			responsive: [
 			  {
-				  breakpoint: 1300,
+				  breakpoint: 1200,
 				  settings: {
-				  slidesToShow: 2.09,
+				  slidesToShow: 3,
 				  }
 				},
-			  {
-				breakpoint: 768,
-				settings: {
-				  slidesToShow:1,
-				}
-			  },
-			  {
-				breakpoint: 480,
-				settings: {
-				  slidesToShow:1,
-				}
-			  }
-			]
-		  });
-
-		  
-		  
-		// our-Founder
-		$('div#partner-logos').slick({
-			slidesToShow: 5,
-			infinite: false,
-			dots: false,
-			arrows:false,
-			autoplay:true,
-			autoplaySpeed:1000,
-			responsive: [
 			  {
 				breakpoint: 768,
 				settings: {
@@ -308,7 +289,8 @@
 			  }
 			]
 		  });
-
+		  
+		});
 
 
 
