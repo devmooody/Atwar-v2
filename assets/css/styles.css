@@ -3555,7 +3555,7 @@ font-weight: 600;
 }
 
 #partnerlogos img {
-  max-height: 100px;       /* Scale image height to fit container */
+  max-height: 150px;       /* Scale image height to fit container */
   max-width: 150px;        /* Scale image width to fit container */
   object-fit: contain;    /* Ensure the entire image is visible */
 }
