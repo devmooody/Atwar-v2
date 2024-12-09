@@ -2744,41 +2744,62 @@ color: #fff;
 
 
 
+/* Mix-use Page */
+.mix-use-holder{
+  background: #fff;
+}
+.mix-use-title h1{
+font-size: 36px;
+font-weight: 600;
+color: #BFA179;
+text-transform: capitalize;
+}
+
+.mix-use-title{
+  padding: 48px 0;
+  background: #fff;
+  }
+  .mix-use{
+    padding: 48px;
+    background: #FBF8F2;
+    margin-bottom: 48px;
+
+    }
 
 
 
 .image-container {
   position: relative; /* Allows positioning of overlay content */
-  border-radius: 12px;
+  border-radius: 5px;
   overflow: hidden; /* Prevents overlay text from overflowing */
-  box-shadow: 0px 0px 5px 0px #0000002B; /* Matches the shadow style */
 }
 
 .image-container img {
   width: 100%;
-  height: auto;
+  height: 506px;
 }
 
 .data-overlay {
-  
   background-color: #FFFFFFF2;
-  padding: 24px 36px;
+  padding: 30px 30px;
   border-radius: 20px;
-  border: 0.8px solid #BDBDBDE6;
-  box-shadow: 0px 0px 5px 0px #0000002B;
+  border: 0;
   z-index: 1;
   position: relative;
   right: 56px;
   width: 110%;
   top: 24px;
+  max-height: 200px;
   box-shadow: 0px 0px 5px 0px #0000002B;
+
 }
 
 .data-overlay h2 {
-  font-size: 23px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 700;
   color: #BFA179;
   margin-bottom: 0;
+  text-transform: capitalize;
 }
 .data-overlay  strong {
     color: #BFA179;
@@ -2791,12 +2812,17 @@ color: #fff;
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 p.date-info{
-  margin-bottom: 16px;
+  margin-bottom: 11px;
 }
+.data-overlay h5{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
 
+}
 .data-overlay ul , .data-overlay li {
   padding: 0;
   padding-left: 8px;
@@ -2808,11 +2834,11 @@ p.date-info{
   /* color: #333; */
   margin-right: 5px;
   position: absolute;
-  top: 5px;
+  top: 6px;
   width: 4px;
-  height: 5px;
+  height: 4px;
   background: #000;
-  left: -5px;
+  left: -8px;
   border-radius: 50%;
   overflow: visible;
 }
@@ -2826,37 +2852,40 @@ p.date-info{
 
 .property-overview {
   padding: 0;
-  margin-top: 74px;
-  padding-left: 70px;
+  margin-top: 42px;
+  padding-left: 30px;
+  padding-right: 40px;
 }
 
 .property-header {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 700;
   color: #BFA179; /* Gold color for the header */
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .property-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 10px 0 5px 0;
   border-bottom: 0.8px solid #BDBDBDE6; /* Divider between rows */
 }
 
 .property-row:last-child {
   border-bottom: none; /* Remove border for the last row */
+  padding-bottom: 0;
 }
 
 .property-label {
-  font-weight: 500;
-  color: #555; /* Slightly muted color for labels */
+  font-weight: 300;
+  color: #101114;
+  font-size: 15px;
 }
 
 .property-value {
-  font-weight: bold;
-  color: #000; /* Black color for values */
+  font-weight: 500;
+  color: #101114; /* Black color for values */
 }
 
 @media (max-width: 768px) {
