@@ -2760,7 +2760,7 @@ text-transform: capitalize;
   background: #fff;
   }
   .mix-use{
-    padding: 48px;
+    padding: 48px 0;
     background: #FBF8F2;
     margin-bottom: 48px;
 
@@ -2776,7 +2776,9 @@ text-transform: capitalize;
 
 .image-container img {
   width: 100%;
-  height: 506px;
+  max-height: 506px;
+  object-fit: cover;
+
 }
 
 .data-overlay {
@@ -2893,7 +2895,9 @@ p.date-info{
   width:100%;
   right: 0;
   padding: 30px 20px;
+  max-height: 100%;
   }
+  
 
   .data-overlay h2 {
     font-size: 1.5rem;
@@ -2971,6 +2975,13 @@ line-height: 30px;
     height: 245px;
 }
 
+
+@media (max-width: 1024px) {
+  .Industrial .list-img-slide.position-relative img{
+    height:auto;
+  }
+
+}
 /*----------- Industrial Page ---------*/
 
 
