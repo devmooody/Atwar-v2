@@ -1415,6 +1415,9 @@ nav a {
   bottom: 100px;
 }
 
+.swiper-slide{
+  display: flex !important;
+}
 @media  (min-width:1200px) and (max-width: 1399px) {
   .Header-logo {
     bottom: 70px;
@@ -1559,50 +1562,7 @@ margin:0;
 
 }
 
-@media (max-width: 767px) {
-  .Home-projects-caption h3{
-    font-size: 14px;
-    font-weight: 400;
-  }
-  .g-4, .gy-4, .gx-4{
-    --bs-gutter-x: 15px;
-    --bs-gutter-y: 15px;
 
-  }
-  .gray-bg{
-    padding:40px 0;
-  }
-  .sec-heading h2{
-    font-size: 26px;
-  }
-  .sec-heading p {
-    font-size: 14px;
-
-  }
-  .hero-banner h2, .main-banner h1{
-    font-size: 20px !important;
-    width: 95%;
-    margin: auto;
-  }
-  .Header-logo img{
-display: none;
-  }
-  .navigation {
-padding:0 15px;
-}
-.hero-banner p{
-  font-size: 14px !important;
-  width: 95%;
-  margin: auto;
-}
-.header {
-  padding: 10px 0;
-  }
-.header img {
-max-width: 100px;
-}
-
-}
 /*------------- Project Projects  ----------------*/
 .Main-projects-caption h2{
     font-size: 34px;
@@ -4830,6 +4790,61 @@ button.accordion-button {
 .accordion-item:has(.accordion-collapse.show) {
   border: 0.5px solid #101114;
   border-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+  .Home-projects-caption h3{
+    font-size: 14px;
+  }
+  .g-4, .gy-4, .gx-4{
+    --bs-gutter-x: 15px;
+    --bs-gutter-y: 15px;
+
+  }
+  .gray-bg{
+    padding:60px 0;
+  }
+  .sec-heading h2{
+    font-size: 26px;
+  }
+  .sec-heading p {
+    font-size: 14px;
+
+  }
+  .footerHome{
+padding:30px 0;
+  }
+  .hero-banner h2, .main-banner h1{
+    font-size: 20px !important;
+    width: 95%;
+    margin: auto;
+  }
+  .Header-logo img{
+display: none;
+  }
+  .navigation {
+padding:0 15px;
+}
+.hero-banner p{
+  font-size: 14px !important;
+  width: 95%;
+  margin: auto;
+}
+.header {
+  padding: 10px 0;
+  }
+.header img {
+max-width: 100px;
+}
+
 }
 
 
