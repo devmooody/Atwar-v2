@@ -1445,7 +1445,7 @@ h1.big-header-capt {
   z-index: 2; /* Place content above the overlay */
 }
 .hero-banner p {
-  font-size: 18px !important;
+  font-size: 18px;
   margin-bottom: 0;
   text-transform: capitalize;
   line-height: 1.5;
@@ -1542,6 +1542,7 @@ h1.big-header-capt {
 }
 
 .Home-projects-caption h3{
+  
 letter-spacing: 0.2px;
 text-transform: capitalize;
 }
@@ -1558,6 +1559,50 @@ margin:0;
 
 }
 
+@media (max-width: 767px) {
+  .Home-projects-caption h3{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .g-4, .gy-4, .gx-4{
+    --bs-gutter-x: 15px;
+    --bs-gutter-y: 15px;
+
+  }
+  .gray-bg{
+    padding:40px 0;
+  }
+  .sec-heading h2{
+    font-size: 26px;
+  }
+  .sec-heading p {
+    font-size: 14px;
+
+  }
+  .hero-banner h2, .main-banner h1{
+    font-size: 20px !important;
+    width: 95%;
+    margin: auto;
+  }
+  .Header-logo img{
+display: none;
+  }
+  .navigation {
+padding:0 15px;
+}
+.hero-banner p{
+  font-size: 14px !important;
+  width: 95%;
+  margin: auto;
+}
+.header {
+  padding: 10px 0;
+  }
+.header img {
+max-width: 100px;
+}
+
+}
 /*------------- Project Projects  ----------------*/
 .Main-projects-caption h2{
     font-size: 34px;
@@ -2048,11 +2093,14 @@ ul.header-bottom-social li a {
     color:#fff;
 }
 ul.header-bottom-social li a:hover, ul.header-bottom-social li a:focus{
-	color:#fff;
+	color:#D5B887;
 }
 ul.header-bottom-social li i {
     margin-right: 0;
     font-size: 16px;
+}
+ul.header-bottom-social li i:hover{
+color:#D5B887
 }
 ul.header-bottom-social.right li:nth-child(2) {
     margin-left: 7px;
@@ -2517,6 +2565,7 @@ footer ul.header-bottom-social li a:hover, footer ul.header-bottom-social li a:f
 @media (max-width: 991px) {
 	.main-banner.image-banner, .hero-header, .hero-banner, .large-banner{
 		min-height:520px;
+    background-size: cover !important;
 	}
 	
 	.pricing-body ul li {
@@ -2624,11 +2673,11 @@ display:none;
 } 
 
  .card:hover img{
-    transform: scale(1.1, 1.1) !important;
+	transform:scale(1.25) !important;
 }  
 
 .card img , img.img-fluid{
- transition: transform .5s ease;
+ transition: all ease 0.4s;
     cursor: pointer;
 } 
 
@@ -3710,7 +3759,7 @@ font-weight: 600;
 }
 
 .footerHome-links a:hover {
-  color: #d4af37;
+  color: #D5B887;
 }
 
 /* Responsive Styling */
@@ -3722,9 +3771,14 @@ font-weight: 600;
 
   .footerHome-text p{
     text-align: center;
+    margin:0 auto;
+    width: 90%;
   }
   .footerHome {
-    margin-top: 10px;
+    margin-top: 0;
+  }
+  .footerHome-logo{
+    margin:10px 0;
   }
 }
 
