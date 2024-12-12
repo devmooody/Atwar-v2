@@ -3302,7 +3302,7 @@ font-weight: 600;
     .section.who-are-we {
       flex-direction: column;
       align-items: center;
-      padding: 70px 15px;
+      padding: 60px 0;
       margin:0;
     }
   
@@ -3338,10 +3338,7 @@ font-weight: 600;
   
   /* Responsive for Mobile (480px and below) */
   @media (max-width: 480px) {
-    section.who-are-we {
-      flex-direction: column;
-      padding: 70px 15px;
-    }
+   
   
     .who-are-we {
       margin: 0 auto 30px auto;
@@ -3354,15 +3351,15 @@ font-weight: 600;
     }
   
     .who-are-we h1 {
-      font-size: 50px;
+      font-size: 40px;
       letter-spacing: -1px;
       right: 0;
     }
   
     .who-are-we p {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 26px;
-      max-width: 95%;
+      max-width: 100%;
       margin: 0 auto;
       text-align: center;
     }
@@ -3486,8 +3483,8 @@ font-weight: 600;
     }
   
     .team-card img {
-      width: 100px;
-      height: 125px;
+      /* width: 100px;
+      height: 125px; */
       margin: 0 auto;
     }
   
@@ -3519,10 +3516,7 @@ font-weight: 600;
       line-height: 34px;
     }
   
-    .team-card img {
-      width: 80px;
-      height: 100px;
-    }
+ 
   
     .team-title {
       font-size: 16px;
@@ -3936,13 +3930,13 @@ font-weight: 600;
   }
 
   .footer h3 {
-    font-size: 14px; /* Smaller font size for headings */
+    font-size: 18px; /* Smaller font size for headings */
     margin-bottom: 8px;
   }
 
   .footer p,
   .footer ul li a {
-    font-size: 12px; /* Smaller font for text and links */
+    font-size: 14px; /* Smaller font for text and links */
   }
 
   .footer p {
@@ -4125,14 +4119,25 @@ bottom:20px;
             }
           .founder-card {
 
-            margin-bottom: 40px;
+            margin-bottom: 60px;
 
             }
 
             .founder-card img {
     width: 100%;
-    max-height: 450px;
+    max-height: 100%;
    
+}
+
+.partners-description{
+  width:80%;
+  margin: 0 auto;
+}
+.partners-section {
+  padding: 60px 0 20px 0;
+}
+section{
+  padding:60px 0;
 }
         }
 
@@ -4844,7 +4849,34 @@ padding:0 15px;
 .header img {
 max-width: 100px;
 }
-
+.founder-title{
+  text-align: center;
+}
+.meet-team{
+  padding-top:0;
+}
+.meet-team .team-card p{
+  line-height: 26px;
+}
+.meet-team .team-card  img{
+  width:100px;
+  height:100px;
+}
+.mission{
+  float: inherit;
+  width:100%;
+}
+.who-are-we br{
+  display: none;
+}
+.vision{
+  width:100%;
+  max-width: 100%;
+}
+section.who-are-we {
+  flex-direction: column;
+  padding: 60px 0;
+}
 }
 
 
