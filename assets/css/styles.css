@@ -702,6 +702,7 @@ nav a {
  color: #101114;
 }
 
+
 .nav-menus-wrapper.nav-menus-wrapper-right.nav-menus-wrapper-open {
     right: 0
 }
@@ -3025,6 +3026,7 @@ line-height: 30px;
     align-items: center;
     background-attachment: fixed;
     justify-content: center;
+    z-index: 1;
   }
   
   .content-banner::before {
@@ -4854,7 +4856,7 @@ padding:0 15px;
     background: transparent;
 }
 .navigation-portrait .nav-header{
-  padding:0 20px;
+  padding:0;
 }
 .header img {
 margin-left: 0;
@@ -4910,18 +4912,27 @@ ul.nav-menu img , .nav-logo{
   margin-top:0;
 }
 .navigation-portrait .nav-menu>li>a , .nav-contact a{
-  font-size: 15px;
-  font-weight: 700;
-}
-ul.nav-dropdown.nav-submenu li a {
-  padding: 5px 30px;
   font-size: 14px;
-  text-transform: capitalize;
-  letter-spacing: 0.1px;
+  font-weight: 600;
+}
+.nav-contact > a{
+  font-weight: 400 !important;
+ }
+ul.nav-dropdown.nav-submenu li a {
+  padding: 0 31px 10px 30px;
+  font-size: 13px;
+  /* text-transform: uppercase; */
+  letter-spacing: 1.1px;
   font-weight: 400;
+  border-bottom: 1px solid #e6e1da26;
+  margin: 4px 0;
+  line-height: 1.1px;
+  padding-bottom: 11px;
+  padding-top: 6px;
+
 }
 .navigation-portrait .nav-menu>li:last-child{
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 .nav-dropdown>li>a{
   border-bottom:0;
@@ -4931,6 +4942,12 @@ ul.nav-dropdown.nav-submenu li a {
 }
 .nav-menu > li{
   padding-right: 10px;
+}
+.header.header-transparent.header-fixed .nav-brand.text-logo.exchange h5, .header .navigation.navigation-portrait .nav-brand.text-logo.exchange h5, .header.Secondary-header.header-fixed a, .header.Secondary-header.header-fixed .submenu-indicator-chevron{
+  color:#fff !important;
+}
+.header.Secondary-header.header-fixed .submenu-indicator-chevron{
+  border-color:#fff !important;
 }
 }
 
