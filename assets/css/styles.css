@@ -573,9 +573,9 @@ ul {
 .header.Secondary-header ul.nav-menu li:first-child {
   margin-right: 34px;
 }
-.header.Secondary-header .navigation {
+/* .header.Secondary-header .navigation {
   padding: 0;
-}
+} */
 .nav-toggle,
 .navigation-hidden .nav-header {
     display: none
@@ -640,14 +640,8 @@ nav a {
 }
 
 
-.nav-menus-wrapper-close-button::before {
-  content: url('https://www.sobharealty.com/images/menu-close.svg');
-  margin-right: 10px;
-  font-size: 1rem;
-  transition: margin-right 0.3s;
-  display: flex;
 
-}
+
 
 .navigation-portrait .nav-logo>img {
     height: 36px;
@@ -655,21 +649,6 @@ nav a {
     padding: 0;
 }
 
-.nav-toggle {
-    width: 30px;
-    height: 30px;
-    padding: 6px 2px 0;
-    position: absolute;
-    top: 50%;
-    margin-top: -18px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.nav-toggle:before {
-    width: 24px;
-    height: 2px;
-}
 
 .navigation-portrait .nav-toggle {
     display: block;
@@ -4863,6 +4842,7 @@ margin-left: 0;
 }
 .founder-title{
   text-align: center;
+  padding:20px 0;
 }
 .meet-team{
   padding-top:0;
@@ -4948,6 +4928,29 @@ ul.nav-dropdown.nav-submenu li a {
 }
 .header.Secondary-header.header-fixed .submenu-indicator-chevron{
   border-color:#fff !important;
+}
+.nav-menus-wrapper-close-button::before {
+  content: url('https://www.sobharealty.com/images/menu-close.svg');
+  margin-right: 10px;
+  font-size: 1rem;
+  transition: margin-right 0.3s;
+  display: flex;
+
+}
+.nav-toggle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 2px 0;
+  position: absolute;
+  top: 50%;
+  margin-top: -18px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.nav-toggle:before {
+  width: 24px;
+  height: 2px;
 }
 }
 
