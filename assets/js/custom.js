@@ -60,7 +60,7 @@
 					c = "mouseleave.nav";
 				u.settings = {};
 				var t = (n(t), t);
-				n(t).find(".nav-menus-wrapper").prepend("<span class='nav-menus-wrapper-close-button'>x</span>"), n(t).find(".nav-search").length > 0 && n(t).find(".nav-search").find("form").prepend("<span class='nav-search-close-button'>x</span>"), u.init = function() {
+				n(t).find(".nav-menus-wrapper").prepend("<div class='nav-menus-wrapper-close-button'></div>"), n(t).find(".nav-search").length > 0 && n(t).find(".nav-search").find("form").prepend("<span class='nav-search-close-button'>x</span>"), u.init = function() {
 					u.settings = n.extend({}, o, s), "right" == u.settings.offCanvasSide && n(t).find(".nav-menus-wrapper").addClass("nav-menus-wrapper-right"), u.settings.hidden && (n(t).addClass("navigation-hidden"), u.settings.mobileBreakpoint = 99999), v(), u.settings.fixed && n(t).addClass("navigation-fixed"), n(t).find(".nav-toggle").on("click touchstart", function(n) {
 						n.stopPropagation(), n.preventDefault(), u.showOffcanvas(), s !== a && u.callback("onShowOffCanvas")
 					}), n(t).find(".nav-menus-wrapper-close-button").on("click touchstart", function() {

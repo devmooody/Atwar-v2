@@ -640,6 +640,14 @@ nav a {
 }
 
 
+.nav-menus-wrapper-close-button::before {
+  content: url('https://www.sobharealty.com/images/menu-close.svg');
+  margin-right: 10px;
+  font-size: 1rem;
+  transition: margin-right 0.3s;
+  display: flex;
+
+}
 
 .navigation-portrait .nav-logo>img {
     height: 36px;
@@ -654,7 +662,7 @@ nav a {
     position: absolute;
     top: 50%;
     margin-top: -18px;
-    right: 30px;
+    right: 20px;
     cursor: pointer;
 }
 
@@ -699,24 +707,12 @@ nav a {
 }
 
 .nav-menus-wrapper-close-button {
-    width: 35px;
-    height: 35px;
-    margin: 10px 7px;
-    display: none;
+    margin: 20px 20px 0 0;
     float: right;
-    color: #8A764B;
-    font-size: 15px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    background: #d9d1c2;
-    border-radius: 50%;
-    padding: 0;
+ 
 }
 
-.navigation-portrait .nav-menus-wrapper-close-button {
-    display: flex;
-}
+
 
 .nav-menu {
     margin: 0;
@@ -776,7 +772,7 @@ nav a {
     height: auto;
     width: 100%;
     padding: 12px 15px 12px 26px;
-    color: #101114 !important;
+    color: #101114 ;
 }
 .header-transparent .navigation-portrait .nav-menu>.active>a, .header-transparent .navigation-portrait .nav-menu>.focus>a, .header-transparent .navigation-portrait .nav-menu>li:hover>a {
     color:#101114 !important;
@@ -903,7 +899,7 @@ nav a {
     left: 0;
     position: fixed;
     display: none;
-    z-index: 19999
+    z-index: 2;
 }
 
 .no-scroll {
@@ -1217,7 +1213,7 @@ ul.nav-menu li:first-child {
   .nav-contact {
     text-align: left;
     margin-top: 10px;
-    padding: 12px 15px 12px 26px;
+    padding: 0 15px 12px 26px;
   }
 }
 
@@ -1445,7 +1441,7 @@ h1.big-header-capt {
 
 .hero-banner > * {
   position: relative; /* Ensure elements are above the overlay */
-  z-index: 2; /* Place content above the overlay */
+  z-index: 1; /* Place content above the overlay */
 }
 .hero-banner p {
   font-size: 18px;
@@ -3937,6 +3933,7 @@ font-weight: 600;
   .footer p,
   .footer ul li a {
     font-size: 14px; /* Smaller font for text and links */
+    font-weight: 400;
   }
 
   .footer p {
@@ -4334,7 +4331,12 @@ section{
 
    /*------------ Our Servises ----------------*/
 
-
+.Our-services.swiper .Main-projects-caption h3{
+font-size: 17px;
+}
+.Our-services.swiper{
+padding:60px 0;
+}
    .content-banner.our-services {
     background: url("../img/OurServices/banner.png");
   }
@@ -4843,11 +4845,19 @@ padding:0 15px;
   width: 90%;
   margin: auto;
 }
-.header {
-  padding: 10px 0;
-  }
+
+  .header {
+    padding: 10px 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background: transparent;
+}
+.navigation-portrait .nav-header{
+  padding:0 20px;
+}
 .header img {
-max-width: 100px;
+margin-left: 0;
 }
 .founder-title{
   text-align: center;
@@ -4877,7 +4887,54 @@ section.who-are-we {
   flex-direction: column;
   padding: 60px 0;
 }
+ul.nav-menu img , .nav-logo{
+  display: none;
 }
+.navigation-portrait .nav-menu>li>a , .nav-menus-wrapper.nav-menus-wrapper-open .nav-contact > a , .navigation-portrait .nav-dropdown>li>a , .submenu-indicator-chevron{
+  color:#fff;
+}
+.nav-menus-wrapper.nav-menus-wrapper-open , .navigation-portrait .nav-menus-wrapper{
+  background: #101114;
+  z-index: 4;
+}
+.navigation-portrait .nav-menu>li , .navigation-portrait .nav-menu>li:last-child  {
+  border:none;
+}
+.nav-menus-wrapper-close-button{
+  background: transparent;
+}
+.submenu-indicator-chevron , .header.header-transparent.header-fixed .submenu-indicator-chevron{
+  border-color:#fff;
+}
+.nav-contact{
+  margin-top:0;
+}
+.navigation-portrait .nav-menu>li>a , .nav-contact a{
+  font-size: 15px;
+  font-weight: 700;
+}
+ul.nav-dropdown.nav-submenu li a {
+  padding: 5px 30px;
+  font-size: 14px;
+  text-transform: capitalize;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+}
+.navigation-portrait .nav-menu>li:last-child{
+  padding-bottom: 10px;
+}
+.nav-dropdown>li>a{
+  border-bottom:0;
+}
+.header.Secondary-header ul.nav-menu li:first-child{
+  margin-right:0;
+}
+.nav-menu > li{
+  padding-right: 10px;
+}
+}
+
+
 
 
 
