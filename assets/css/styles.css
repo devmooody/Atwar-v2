@@ -4981,6 +4981,8 @@ ul.nav-dropdown.nav-submenu li a {
 
   max-width: 100%;
   height: auto;
+  max-height: 100%;
+
 }
 
 .Main-projects.sample h3 {
