@@ -258,7 +258,7 @@
 		// our-Founder
 		$('#partnerlogos').slick({
 			slidesToShow: 5,             // Show 5 items at once
-			slidesToScroll: 1,           // Scroll 1 item at a time
+			slidesToScroll: 2,           // Scroll 1 item at a time
 			autoplay: true,              // Enable autoplay
 			autoplaySpeed: 1000,         // Change slides every 2 seconds
 			infinite: true,              // Enable infinite looping
@@ -267,7 +267,6 @@
 			centerMode: false,           // Do not center items
 			variableWidth: false,        // Ensure equal width for all items
 			speed: 500,                  // Transition speed
-			easing: 'linear',            
 			responsive: [
 			  {
 				  breakpoint: 1200,
@@ -296,12 +295,13 @@
 
     $('#ourservices').slick({
       slidesToShow: 3,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
 	  infinite: false,
+	  speed:300,
 	  dots: true,
 	  arrows:false,
-	  autoplay:false,
-	  autoplaySpeed:9000,
+	  autoplay:true,
+	  autoplaySpeed:1400,
       responsive: [
         {
           breakpoint: 768,

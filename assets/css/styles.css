@@ -534,10 +534,13 @@ font-weight: 600;
 }
 .header.header-transparent.header-fixed .nav-brand.text-logo.exchange h5, .header .navigation.navigation-portrait .nav-brand.text-logo.exchange h5 , .header.Secondary-header.header-fixed a ,
 .header.Secondary-header.header-fixed .submenu-indicator-chevron{
-	color:#252c41 !important;
+	color:#101114 !important;
+}
+header.Secondary-header.header-fixed a:hover{
+  color:#D5B887 !important;
 }
 .header.Secondary-header.header-fixed .submenu-indicator-chevron{
-  border-color: #252c41;
+  border-color: #D5B887;
 }
 .header.Secondary-header .submenu-indicator-chevron{
   border-color:#fff;
@@ -566,13 +569,13 @@ ul {
     width: 100%;
     display: table;
     position: relative;
-    padding: 0 63px;
+}
+
+.header.header-transparent{
+  padding:20px 63px;
 }
 
 
-.header.Secondary-header ul.nav-menu li:first-child {
-  margin-right: 34px;
-}
 /* .header.Secondary-header .navigation {
   padding: 0;
 } */
@@ -686,11 +689,7 @@ nav a {
     right: 0
 }
 
-.nav-menus-wrapper-close-button {
-    margin: 20px 20px 0 0;
-    float: right;
- 
-}
+
 
 
 
@@ -754,9 +753,9 @@ nav a {
     padding: 12px 15px 12px 26px;
     color: #101114 ;
 }
-.header-transparent .navigation-portrait .nav-menu>.active>a, .header-transparent .navigation-portrait .nav-menu>.focus>a, .header-transparent .navigation-portrait .nav-menu>li:hover>a {
+/* .header-transparent .navigation-portrait .nav-menu>.active>a, .header-transparent .navigation-portrait .nav-menu>.focus>a, .header-transparent .navigation-portrait .nav-menu>li:hover>a {
     color:#101114 !important;
-}
+} */
 .nav-menu>.active>a,
 .nav-menu>.focus>a,
 .nav-menu>li:hover>a {
@@ -780,7 +779,7 @@ nav a {
 .header-transparent.header-fixed .nav-menu>.active>a,
 .header-transparent.header-fixed .nav-menu>.focus>a,
 .header-transparent.header-fixed .nav-menu>li:hover>a {
-    color:#8A764B !important;
+    color:#D5B887 !important;
 }
 .nav-menu>li>a>[class*=ion-],
 .nav-menu>li>a>i {
@@ -1391,9 +1390,7 @@ nav a {
   bottom: 100px;
 }
 
-.swiper-slide{
-  display: flex !important;
-}
+
 @media  (min-width:1200px) and (max-width: 1399px) {
   .Header-logo {
     bottom: 70px;
@@ -2292,7 +2289,7 @@ footer ul.header-bottom-social li a:hover, footer ul.header-bottom-social li a:f
 		animation-duration: 0.5s;
 		-webkit-animation-name: slideInDown;
 		animation-name: slideInDown;
-    padding: 10px 0;
+    padding: 10px 63px;
 	}
 	
   .nav-menu>li>a:hover {
@@ -3866,7 +3863,7 @@ font-weight: 600;
   .footer-bottom-content {
     flex-direction: column;
     align-items: flex-start; /* Align bottom content to the left */
-    text-align: left;
+    text-align: center;
     gap: 10px;
   }
 
@@ -4788,11 +4785,11 @@ button.accordion-button {
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .Home-projects-caption h3{
     font-size: 14px;
   }
-  .g-4, .gy-4, .gx-4{
+  .g-4, .gy-4, .gx-4 , .g-3 , .gy-3, .gx-3{
     --bs-gutter-x: 15px;
     --bs-gutter-y: 15px;
 
@@ -4818,6 +4815,9 @@ padding:30px 0;
   .Header-logo img{
 display: none;
   }
+  .header.header-transparent {
+    padding: 10px 0;
+  }
   .navigation {
 padding:0 15px;
 }
@@ -4825,6 +4825,11 @@ padding:0 15px;
   font-size: 14px !important;
   width: 90%;
   margin: auto;
+}
+.mix-use-title h1 , .Industrial h1{
+  margin-top: 50px;
+  font-size: 30px;
+
 }
 
   .header {
@@ -4896,15 +4901,13 @@ ul.nav-menu img , .nav-logo{
   font-weight: 600;
 }
 .nav-contact > a{
-  font-weight: 400 !important;
+  font-weight: 600 !important;
  }
 ul.nav-dropdown.nav-submenu li a {
   padding: 0 31px 10px 30px;
-  font-size: 13px;
+  font-size: 14px;
   /* text-transform: uppercase; */
-  letter-spacing: 1.1px;
   font-weight: 400;
-  border-bottom: 1px solid #e6e1da26;
   margin: 4px 0;
   line-height: 1.1px;
   padding-bottom: 11px;
@@ -4952,10 +4955,25 @@ ul.nav-dropdown.nav-submenu li a {
   width: 24px;
   height: 2px;
 }
+.nav-menu>li:hover>a{
+  color:#D5B887 !important;
+}
+.nav-menus-wrapper-close-button {
+  margin: 20px 20px 0 0;
+  float: right;
+
 }
 
+.Main-projects.sample .card-thumb img{
 
+  max-width: 100%;
+  height: auto;
+}
 
+.Main-projects.sample h3 {
 
+font-size: 19px;
+}
+}
 
 
