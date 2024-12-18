@@ -4789,14 +4789,23 @@ button.accordion-button {
   .Home-projects-caption h3{
     font-size: 14px;
   }
-  .g-4, .gy-4, .gx-4 , .g-3 , .gy-3, .gx-3{
+ .g-4 , .gy-4, .gx-4{
     --bs-gutter-x: 15px;
     --bs-gutter-y: 15px;
 
   }
-  .gray-bg{
+
+.g-3 , .gy-3, .gx-3{
+    --bs-gutter-x: 10px;
+    --bs-gutter-y: 10px;
+
+  }
+  
+  
+  .gray-bg , section.sample{
     padding:60px 0;
   }
+
   .sec-heading h2{
     font-size: 26px;
   }
@@ -4828,7 +4837,7 @@ padding:0 15px;
 }
 .mix-use-title h1 , .Industrial h1{
   margin-top: 50px;
-  font-size: 30px;
+  font-size: 27px;
 
 }
 
@@ -4852,6 +4861,7 @@ margin-left: 0;
 .meet-team{
   padding-top:0;
 }
+
 .meet-team .team-card p{
   line-height: 26px;
 }
@@ -4876,6 +4886,9 @@ section.who-are-we {
 }
 ul.nav-menu img , .nav-logo{
   display: none;
+}
+.active-border {
+  border: 3px solid #BFA176;
 }
 .navigation-portrait .nav-menu>li>a , .nav-menus-wrapper.nav-menus-wrapper-open .nav-contact > a , .navigation-portrait .nav-dropdown>li>a , .submenu-indicator-chevron{
   color:#fff;
@@ -4971,8 +4984,22 @@ ul.nav-dropdown.nav-submenu li a {
 }
 
 .Main-projects.sample h3 {
+font-size: 17px;
+}
 
-font-size: 19px;
+.Industrial .box-holder{
+  height: auto;
+}
+.listing-short-detail-holder {
+padding:20px 15px 0 15px;
+
+}
+.our-services{
+  padding:0;
+}
+.data-overlay {
+  padding: 20px 20px;
+
 }
 }
 
