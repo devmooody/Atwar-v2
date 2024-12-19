@@ -43,16 +43,16 @@
     <div class="nav-menus-wrapper" style="transition-property: none;">
       <ul class="nav-menu">
         <li class="active-"><a href="index.html">Home</a></li>
-        <li>
-          <a href="about.html">About Us</a>
-          <ul class="nav-dropdown nav-submenu">
-            <li><a href="about.html">Our Company</a></li>
-            <li><a href="about.html">Who We Are</a></li>
-            <li><a href="about.html">Our Founder</a></li>
-            <li><a href="about.html">Our Team</a></li>
-            <li><a href="about.html">Our Partners</a></li>
-          </ul>
-        </li>
+         <li>
+        <a href="about.html">About Us</a>
+        <ul class="nav-dropdown nav-submenu">
+          <li><a href="about.html#ourcompany">Our Company</a></li>
+          <li><a href="about.html#whoweare">Who We Are</a></li>
+          <li><a href="about.html#founder">Our Founder</a></li>
+          <li><a href="about.html#team">Our Team</a></li>
+          <li><a href="about.html#partner">Our Partners</a></li>
+        </ul>
+      </li>
         <li class="active-"><a href="our-services.html">Our Services</a></li>
         <li>
           <a href="JavaScript:void(0);">Our Projects</a>
@@ -104,7 +104,7 @@
 
      <section class="About-page">
         <div class="container">
-          <div class="row justify-content-center">
+          <div class="row justify-content-center scroll-target" id="ourcompany">
             <div class="col-lg-4 col-md-6 text-center">
               <div class="sec-heading center wow fadeInUp" data-wow-delay="0.3s">
                <div> <h2>ABOUT <span>OUR COMPANY </h2> </div>
@@ -134,10 +134,10 @@
             <!-- ============================ About End ================================== -->
 
             <!-- ============================ About - Who We are - Start ================================== -->
- <section class="who-are-we">
+ <section class="who-are-we scroll-target" id="whoweare">
 
  <div class="container">
- <div class="section-main">
+ <div class="section-main ">
          <div class="section-holder vision">
                <h3>who we are.what we do</h3>
                <h1>OUR VISION</h1>
@@ -159,7 +159,7 @@
 
 
 
-<section class="founder-section">
+<section class="founder-section scroll-target" id="founder">
   <div class="founder-title">
     <div class="container">
     <div class="wow fadeInUp" data-wow-delay="0.1s">
@@ -349,7 +349,7 @@ Has 20+ years of leadership experience successfully managed operations across in
 
 
           <!-- ============================ About - Meet Our Founder - Start ================================== -->
-<section class="meet-team">
+<section class="meet-team scroll-target" id="team">
 	<div class="meet-team-heading">
   				<div class="container">
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
@@ -453,7 +453,7 @@ Has 20+ years of leadership experience successfully managed operations across in
 
 
 
-<section class="partners-section">
+<section class="partners-section scroll-target" id="partner">
     <div class="container">
         <h2 class="partners-title wow fadeInUp" data-wow-delay="0.2s">Our Partners</h2>
         <p class="partners-description wow fadeInUp" data-wow-delay="0.2s">Meet the visionaries behind your dreams: Our real estate developers.</p>
@@ -555,12 +555,14 @@ Has 20+ years of leadership experience successfully managed operations across in
       <!-- Column 2: About -->
       <div class="footer-col">
         <h3>About</h3>
+
+        
         <ul>
-          <li><a href="#">Our Company</a></li>
-          <li><a href="#">Who we are</a></li>
-          <li><a href="#">Our Founder</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Our Partners</a></li>
+         <li><a href="about.html#ourcompany">Our Company</a></li>
+          <li><a href="about.html#whoweare">Who We Are</a></li>
+          <li><a href="about.html#founder">Our Founder</a></li>
+          <li><a href="about.html#team">Our Team</a></li>
+          <li><a href="about.html#partner">Our Partners</a></li>
         </ul>
       </div>
 
@@ -569,10 +571,10 @@ Has 20+ years of leadership experience successfully managed operations across in
         <h3>Our Projects</h3>
         <ul>
          <li><a href="Industrial-Projects.html">Industrial Projects</a></li>
-          <li><a href="#">Mixed-use Projects</a></li>
-          <li><a href="#">Villa Projects</a></li>
-          <li><a href="#">Religious Projects</a></li>
-          <li><a href="#">Educational Projects</a></li>
+          <li><a href="Mixed-use-project.html">Mixed-use Projects</a></li>
+          <li><a href="villa-projects.html">Villa Projects</a></li>
+          <li><a href="Educational-Projects.html#Religious">Religious Projects</a></li>
+          <li><a href="Educational-Projects.html">Educational Projects</a></li>
         </ul>
       </div>
 
@@ -580,9 +582,9 @@ Has 20+ years of leadership experience successfully managed operations across in
       <div class="footer-col">
         <h3>Services</h3>
         <ul>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Why Atwar</a></li>
-          <li><a href="#">Contact Us</a></li>
+        <li><a href="our-services.html">Our Services</a></li>
+                     <li><a href="our-services.html#whyattwar">Why Atwar</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
     </div>

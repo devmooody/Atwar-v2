@@ -183,6 +183,9 @@ body {
 
 }
  
+html {
+  scroll-behavior: smooth;
+}
 h1,h2,h3,h4,h5,h6{
   font-family: "Poppins", sans-serif;
 }
@@ -228,6 +231,11 @@ a.white-link {
 .img-rounded {
   border-radius: 4px; }
 
+  .scroll-target {
+    scroll-margin-top: 30vh; /* Offset by 20% of viewport height */
+  }
+
+ 
 html body .mdi:before,
 html body .mdi-set {
   line-height: initial;
@@ -644,8 +652,6 @@ nav a {
 
 
 
-
-
 .navigation-portrait .nav-logo>img {
     height: 36px;
     margin: 6px auto 6px 15px;
@@ -1044,7 +1050,7 @@ nav a {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight:400;
 }
 #navigation span.label-new {
@@ -1079,7 +1085,8 @@ nav a {
 
 .nav-dropdown>.focus>a,
 .nav-dropdown>li:hover>a {
-    color:#D5B887;
+    color:#BFA179;
+    font-weight: 500;
 }
 
 .nav-dropdown.nav-dropdown-left {
