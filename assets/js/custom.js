@@ -255,39 +255,7 @@
 
 
 
-		// our-Founder
-		$('#partnerlogos').slick({
-			slidesToShow: 5,             // Show 5 items at once
-			slidesToScroll: 2,           // Scroll 1 item at a time
-			autoplay: true,              // Enable autoplay
-			autoplaySpeed: 1000,         // Change slides every 2 seconds
-			infinite: true,              // Enable infinite looping
-			arrows: false,               // Disable next/previous arrows
-			dots: false,                 // Disable dots navigation
-			centerMode: false,           // Do not center items
-			variableWidth: false,        // Ensure equal width for all items
-			speed: 500,                  // Transition speed
-			responsive: [
-			  {
-				  breakpoint: 1200,
-				  settings: {
-				  slidesToShow: 3,
-				  }
-				},
-			  {
-				breakpoint: 768,
-				settings: {
-				  slidesToShow:2,
-				}
-			  },
-			  {
-				breakpoint: 480,
-				settings: {
-				  slidesToShow:1,
-				}
-			  }
-			]
-		  });
+	
 		  
 		});
 
