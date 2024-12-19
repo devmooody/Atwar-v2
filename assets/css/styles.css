@@ -960,6 +960,9 @@ nav a {
     text-align: center
 }
 
+.nav-menus-wrapper-close-button {
+display: none;
+}
 
 
 
@@ -4981,7 +4984,7 @@ ul.nav-dropdown.nav-submenu li a {
 .nav-menus-wrapper-close-button {
   margin: 20px 20px 0 0;
   float: right;
-
+display: block;
 }
 
 .Main-projects.sample .card-thumb img , .image-container img{
