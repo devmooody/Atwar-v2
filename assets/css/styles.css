@@ -2400,6 +2400,8 @@ footer ul.header-bottom-social li a:hover, footer ul.header-bottom-social li a:f
     font-weight: 700;
     letter-spacing: 0.2px;
     text-transform: capitalize;
+    text-align: center;
+
 	}
 
 	.hero-content h1{
@@ -2935,7 +2937,7 @@ p.date-info{
   }
 
   .property-row {
-    flex-direction: column; /* Stack labels and values on smaller screens */
+    flex-direction: row; /* Stack labels and values on smaller screens */
     align-items: flex-start;
   }
 
@@ -4126,8 +4128,9 @@ margin-bottom: 0;
             line-height: 26px;
             font-weight: 300;
           }
+
       
-          .btn-check-note:hover {
+          .btn-check-note:hover ,  .founder-card:hover .btn-check-note  {
             background: #ad835f;
             color: #fff;
             border-color: #ad835f;
@@ -4140,7 +4143,8 @@ margin-bottom: 0;
             transition: margin-right 0.3s;
           }
 
-          .btn-check-note:hover::before {
+       
+          .founder-card:hover .btn-check-note::before   {
             content: url('../img/About/arrow-white.svg'); /* White arrow on hover */
             margin-right: 15px; /* Optional margin adjustment */
         }
@@ -4150,6 +4154,19 @@ margin-bottom: 0;
           }
 
 
+          .slick-slide {
+            filter: grayscale(0%);
+
+            transition: filter 0.3s ease; /* Smooth transition */
+          }
+          
+          /* Remove grayscale from the last slide when hovered */
+          .slick-slide:hover {
+            filter: grayscale(100%);
+
+          }
+          
+       
           @media (max-width: 767px) {
             .founder-card-body {
 bottom:20px;
@@ -4880,7 +4897,7 @@ button.accordion-button {
 padding:30px 0;
   }
   .hero-banner h2, .main-banner h1{
-    font-size: 20px !important;
+    font-size: 29px !important;
     width: 90%;
     margin: auto;
   }
@@ -5059,14 +5076,23 @@ font-size: 17px;
 padding:20px 15px 0 15px;
 
 }
-.our-services{
-  padding:0;
-}
+
 .data-overlay {
   padding: 20px 20px;
 
 }
-
+.our-services .item{
+  height:400,
+}
+.our-services{
+ padding: 48px 0; 
+}
+.accordion-body {
+padding:0 20px 20px 20px;
+}
+button.accordion-button{
+  padding:20px 20px;
+}
 }
 
 
