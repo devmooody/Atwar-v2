@@ -31,7 +31,7 @@
     
     @font-face {
     font-family: 'Dubai';
-    src: url('../../assets//fonts//dubai//Dubai-Medium.ttf');
+    src: url('../../assets/fonts/dubai/Dubai-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -677,8 +677,8 @@ nav a {
 }
 
 .navigation-portrait .nav-menus-wrapper {
-  width: 320px;
-  height: 100%;
+  width: 95%;
+  height: 98%;
   top: 0;
   left: -400px;
   position: fixed;
@@ -688,6 +688,10 @@ nav a {
   -webkit-overflow-scrolling: touch;
   transition-duration: .8s;
   transition-timing-function: ease;
+  padding: 14px;
+  margin: 10px auto;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .navigation-portrait .nav-menus-wrapper.nav-menus-wrapper-right {
@@ -4974,8 +4978,23 @@ ul.nav-menu img , .nav-logo{
   color:#fff;
 }
 .nav-menus-wrapper.nav-menus-wrapper-open , .navigation-portrait .nav-menus-wrapper{
-  background: #101114;
+  background: #000000;
   z-index: 4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+li.active- a {
+  color: #D5B887 !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+}
+.navigation-portrait .nav-menu>li>a , .nav-contact a{
+  font-size: 20px;
+  font-weight: 400;
+      font-family: 'Dubai';
+
 }
 .navigation-portrait .nav-menu>li , .navigation-portrait .nav-menu>li:last-child  {
   border:none;
@@ -4988,13 +5007,12 @@ ul.nav-menu img , .nav-logo{
 }
 .nav-contact{
   margin-top:0;
+  text-align: left;
+    width: 100%;
 }
-.navigation-portrait .nav-menu>li>a , .nav-contact a{
-  font-size: 14px;
-  font-weight: 600;
-}
+
 .nav-contact > a{
-  font-weight: 600 !important;
+  font-weight: 400 !important;
  }
 ul.nav-dropdown.nav-submenu li a {
   padding: 0 31px 10px 30px;
@@ -5008,7 +5026,7 @@ ul.nav-dropdown.nav-submenu li a {
 
 }
 .navigation-portrait .nav-menu>li:last-child{
-  padding-bottom: 5px;
+  padding-bottom: 0;
 }
 .nav-dropdown>li>a{
   border-bottom:0;
@@ -5027,10 +5045,18 @@ ul.nav-dropdown.nav-submenu li a {
 }
 .nav-menus-wrapper-close-button::before {
   content: url('https://www.sobharealty.com/images/menu-close.svg');
-  margin-right: 10px;
-  font-size: 1rem;
   transition: margin-right 0.3s;
   display: flex;
+  background: #d5b887;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: normal;
 
 }
 .nav-toggle {
@@ -5054,7 +5080,11 @@ ul.nav-dropdown.nav-submenu li a {
 .nav-menus-wrapper-close-button {
   margin: 20px 20px 0 0;
   float: right;
-display: block;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  margin-right: 0;
 }
 
 .Main-projects.sample .card-thumb img , .image-container img{
@@ -5092,6 +5122,16 @@ padding:0 20px 20px 20px;
 }
 button.accordion-button{
   padding:20px 20px;
+}
+.submenu-indicator-chevron {
+
+  height: 10px;
+  width: 10px;
+
+}
+.navigation-portrait .nav-menu>li>a , .nav-contact{
+  padding: 0 0 30px 40px;
+
 }
 }
 
