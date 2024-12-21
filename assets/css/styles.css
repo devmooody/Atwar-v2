@@ -232,9 +232,18 @@ a.white-link {
   border-radius: 4px; }
 
   .scroll-target {
-    scroll-margin-top: 30vh; /* Offset by 20% of viewport height */
+    scroll-margin-top: 20vh; /* Offset by 20% of viewport height */
   }
 
+  .scroll-target2 {
+    scroll-margin-top: 30vh; /* Offset by 20% of viewport height */
+  }
+  #whoweare {
+    scroll-margin-top: 28vh; /* Offset by 20% of viewport height */
+  }
+  #founder {
+    scroll-margin-top: 29vh; /* Offset by 20% of viewport height */
+  }
  
 html body .mdi:before,
 html body .mdi-set {
@@ -280,9 +289,9 @@ p {
     border: none;
     overflow: hidden;
     background: #ffffff;
-    border-radius: 0;
-}
+    border-radius: 2px;
 
+}
 
 
 /*------------ Global Settings: Animation ----------------*/
@@ -744,7 +753,7 @@ nav a {
     display: inline-block;
     color:#fff;
     font-weight: 500;
-	font-size: 14px;
+	font-size: 16px;
    padding:13px 0;
     letter-spacing: 1px;
 }
@@ -1176,7 +1185,7 @@ ul.nav-menu li:first-child {
 .nav-contact > a {
   text-decoration: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -1527,6 +1536,15 @@ h1.big-header-capt {
     margin:0;
 }
 
+
+
+.card:hover .z-1{
+  border:5px solid #c0a279;
+  -webkit-transition: all 0.2s ease 0s;
+        -moz-transition: all 0.2s ease 0s;
+        -o-transition: all 0.2s ease 0s;
+        transition: all 0.2s ease 0s;
+}
 .Home-projects-caption h3{
   
 letter-spacing: 0.2px;
@@ -3080,6 +3098,7 @@ line-height: 30px;
     background-size: 30%;
     background-position: top left;
     background-repeat: no-repeat;
+    padding:60px 0;
 }
 
 .About-page h2{
@@ -3091,9 +3110,9 @@ line-height: 30px;
     margin-top: 29px;
 }
 .About-page p{
-    font-size: 18px;
+    font-size: 17px;
     line-height: 2;
-   margin-bottom: 30px;
+   margin-bottom: 15px;
 }
 .About-page p:last-child {
     margin: 0;
@@ -3198,6 +3217,7 @@ font-weight: 600;
     margin-bottom: 0;
     display: flex;
     background: #F6F6F6;
+    padding:110px 0;
    }
 
 .section-holder {
