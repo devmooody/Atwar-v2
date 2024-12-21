@@ -4158,14 +4158,14 @@ margin-bottom: 0;
           }
 
 
-          .slick-slide {
+          .partners-section .slick-slide {
             filter: grayscale(0%);
 
             transition: filter 0.3s ease; /* Smooth transition */
           }
           
           /* Remove grayscale from the last slide when hovered */
-          .slick-slide:hover {
+          .partners-section .slick-slide:hover {
             filter: grayscale(100%);
 
           }
@@ -4275,14 +4275,13 @@ section{
   }
   
   .profile-card-left h2 {
-    margin-bottom: 21px;
+    margin-bottom: 10px;
   }
   
   .profile-card-right h3,
   .profile-card-left h3 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 26px;
-    text-transform: uppercase;
     color: #101114;
     font-weight: 400;
   }
