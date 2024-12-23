@@ -5053,11 +5053,10 @@ ul.nav-menu img , .nav-logo{
   -webkit-transform: none;
   transform: none;  
 }
-.nav-menus-wrapper ul li , .nav-contact{
+.nav-menus-wrapper ul li , .nav-contact {
   opacity: 0;
   -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
-  transition-duration: 10ms;
 }
 
 
