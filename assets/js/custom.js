@@ -259,20 +259,29 @@
 	  autoplaySpeed:1400,
       responsive: [
         {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-			slidesToScroll: 1,
-
-          },
-        },
-        {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 1.75,
 			slidesToScroll: 1,
           },
         },
+		{
+			breakpoint: 768,
+			settings: {
+			  slidesToShow:1.5,
+			  slidesToScroll: 1,
+  
+			},
+		  },
+		  {
+			breakpoint: 767,
+			settings: {
+			  slidesToShow:1,
+			  slidesToScroll: 1,
+  
+			},
+		  },
+        
       ],
     });
 
