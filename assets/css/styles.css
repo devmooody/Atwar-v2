@@ -728,6 +728,7 @@ nav a {
   margin: 10px auto;
   align-items: center;
   border-radius: 5px;
+  max-width: 450px;
 }
 
 .navigation-portrait .nav-menus-wrapper.nav-menus-wrapper-right {
@@ -3824,7 +3825,7 @@ height: 130px;
   .footerHome-text p{
     text-align: center;
     margin:0 auto;
-    width: 90%;
+    width: 75%;
   }
   .footerHome {
     margin-top: 0;
@@ -4066,7 +4067,7 @@ height: 130px;
   }
 
   .footer {
-    padding: 50px 15px 20px 15px; /* Compact padding for mobile screens */
+    padding: 60px 15px 20px 15px; /* Compact padding for mobile screens */
   }
 }
 
@@ -4927,6 +4928,10 @@ button.accordion-button {
   .Home-projects-caption h3{
     font-size: 14px;
   }
+  .mix-use-title{
+      padding: 30px 0 20px 0;
+  }
+  
  .g-4 , .gy-4, .gx-4{
     --bs-gutter-x: 15px;
     --bs-gutter-y: 15px;
@@ -4954,6 +4959,13 @@ button.accordion-button {
   .footerHome{
 padding:30px 0;
   }
+  .footerHome-logo {
+    flex: 0.2;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
   .hero-banner h2, .main-banner h1{
     font-size: 29px !important;
     width: 90%;
@@ -4978,8 +4990,8 @@ padding:10px 15px;
   line-height: 1.4;
 }
 .mix-use-title h1 , .Industrial h1{
-  margin-top: 50px;
-  font-size: 27px;
+  margin-top: 80px;
+  font-size: 24px;
 
 }
 
@@ -5048,12 +5060,12 @@ ul.nav-menu img , .nav-logo{
 }
 
 
-.nav-menus-wrapper.nav-menus-wrapper-open ul li , .nav-contact{
-  opacity: 1;
-  -webkit-transform: none;
-  transform: none;  
+.nav-menus-wrapper.nav-menus-wrapper-open ul li , .nav-menus-wrapper-open .nav-contact a{
+  opacity: 1 !important;
+  -webkit-transform: none !important;
+  transform: none !important;
 }
-.nav-menus-wrapper ul li , .nav-contact {
+.nav-menus-wrapper ul li  ,  .nav-menus-wrapper .nav-contact a  {
   opacity: 0;
   -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
@@ -5102,8 +5114,7 @@ ul.nav-dropdown.nav-submenu li a {
   letter-spacing: 0.1px;
   margin-left: 10px;
   line-height: 12px;
-  bottom: 15px;
-
+  
 }
 .navigation-portrait .nav-menu>li:last-child{
   padding-bottom: 0;
@@ -5177,7 +5188,7 @@ ul.nav-dropdown.nav-submenu li a {
 }
 
 .Main-projects.sample h3 {
-font-size: 17px;
+font-size: 16px;
 }
 
 .Industrial .box-holder{
