@@ -101,6 +101,42 @@ font-weight: 300;
   background-color: #f7f7f7;
   z-index: 999999; */
 }
+/* Video background styling */
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Adjust height as needed */
+}
+
+
+
+/* Optional: Add an overlay effect on the video */
+
+
+.hero-banner {
+  /* position: relative;
+  overflow: hidden;
+  height: 100vh; /* Adjust as needed */
+}
+.hero-banner>* {
+  position: relative;
+  z-index: 1;
+} 
+.text-light{
+	color:#fff !important;
+}
+
+.vedio-banner {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 640px;
+  width: 100%;
+  overflow: hidden;
+}
 .form-group {
     margin-bottom: 15px;
 }
@@ -890,10 +926,12 @@ nav a {
     -ms-transform: rotate(0deg);
     transform: rotate(0deg)
 }
-.navigation-portrait .nav-dropdown .submenu-indicator.submenu-indicator-up .submenu-indicator-chevron {
-    -ms-transform: rotate(225deg);
-    transform: rotate(225deg);
+
+.nav-submenu-open span.submenu-indicator-chevron{
+border-color: #D5B887;
 }
+
+
 .nav-overlay-panel {
     width: 100%;
     height: 100%;
@@ -1211,6 +1249,22 @@ ul.nav-menu li:first-child {
   .nav-menus-wrapper {
     display: block; /* Stack items for mobile */
   }
+  .nav-submenu-open ul li a:first-child {
+    color: #fff !important;
+}
+.nav-contact a:hover {
+  color:#D5B887 !important;
+}
+.nav-submenu-open ul li a:first-child:hover {
+  color: #D5B887 !important;
+}
+li.nav-submenu-open  a{
+  color: #D5B887 !important;
+
+}
+.nav-menus-wrapper.nav-menus-wrapper-open {
+  left: 10PX;
+}
 
   .nav-menu {
     flex-direction: column; /* Stack menu items vertically */
@@ -2399,8 +2453,8 @@ footer ul.header-bottom-social li a:hover, footer ul.header-bottom-social li a:f
 	}
 
 	.hero-banner h2, .main-banner h1 {
-    font-size: 30px;
-    line-height: 1.5;
+    font-size: 44px;
+    line-height: 1.2;
     font-weight: 700;
     letter-spacing: 0.2px;
     text-transform: capitalize;
@@ -2534,8 +2588,9 @@ footer ul.header-bottom-social li a:hover, footer ul.header-bottom-social li a:f
 
 }
 @media (max-width: 991px) {
-	.main-banner.image-banner, .hero-header, .hero-banner, .large-banner{
-		min-height:520px;
+	.main-banner.image-banner, .hero-header, .hero-banner, .large-banner , .overlay2{
+		height:520px;
+    min-height: 520px;
     background-size: cover !important;
 	}
 	
@@ -4911,12 +4966,16 @@ display: none;
     padding: 10px 0;
   }
   .navigation {
-padding:0 15px;
+padding:10px 15px;
+}
+.hidden-me{
+  margin-left: 10px;
 }
 .hero-banner p{
   font-size: 14px !important;
-  width: 90%;
+  width: 70%;
   margin: auto;
+  line-height: 1.4;
 }
 .mix-use-title h1 , .Industrial h1{
   margin-top: 50px;
@@ -4975,6 +5034,8 @@ ul.nav-menu img , .nav-logo{
 }
 .navigation-portrait .nav-menu>li>a , .nav-menus-wrapper.nav-menus-wrapper-open .nav-contact > a , .navigation-portrait .nav-dropdown>li>a , .submenu-indicator-chevron{
   color:#fff;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 .nav-menus-wrapper.nav-menus-wrapper-open , .navigation-portrait .nav-menus-wrapper{
   background: #000000;
@@ -4983,7 +5044,11 @@ ul.nav-menu img , .nav-logo{
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+
 }
+
+
 li.active- a {
   color: #D5B887 !important;
   font-weight: 400 !important;
@@ -4992,7 +5057,7 @@ li.active- a {
 .navigation-portrait .nav-menu>li>a , .nav-contact a{
   font-size: 20px;
   font-weight: 400;
-      font-family: 'Dubai';
+ font-family: 'Dubai';
 
 }
 .navigation-portrait .nav-menu>li , .navigation-portrait .nav-menu>li:last-child  {
@@ -5016,12 +5081,17 @@ li.active- a {
 ul.nav-dropdown.nav-submenu li a {
   padding: 0 31px 10px 30px;
   font-size: 14px;
-  /* text-transform: uppercase; */
   font-weight: 400;
   margin: 4px 0;
   line-height: 1.1px;
-  padding-bottom: 11px;
   padding-top: 6px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Dubai';
+  letter-spacing: 0.1px;
+  margin-left: 10px;
+  line-height: 12px;
+  bottom: 15px;
 
 }
 .navigation-portrait .nav-menu>li:last-child{
@@ -5043,7 +5113,7 @@ ul.nav-dropdown.nav-submenu li a {
   border-color:#fff !important;
 }
 .nav-menus-wrapper-close-button::before {
-  content: url('https://www.sobharealty.com/images/menu-close.svg');
+  content: '✕';
   transition: margin-right 0.3s;
   display: flex;
   background: #d5b887;
@@ -5056,6 +5126,7 @@ ul.nav-dropdown.nav-submenu li a {
   justify-content: center;
   align-items: center;
   line-height: normal;
+  color: #000;
 
 }
 .nav-toggle {
@@ -5065,7 +5136,7 @@ ul.nav-dropdown.nav-submenu li a {
   position: absolute;
   top: 50%;
   margin-top: -18px;
-  right: 20px;
+  right: 30px;
   cursor: pointer;
 }
 
@@ -5081,8 +5152,8 @@ ul.nav-dropdown.nav-submenu li a {
   float: right;
   display: block;
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 15px;
+  right: 36px;
   margin-right: 0;
 }
 
@@ -5132,6 +5203,111 @@ button.accordion-button{
   padding: 0 0 30px 40px;
 
 }
+
+.nav-submenu-open span.submenu-indicator-chevron{
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.navigation-portrait .nav-dropdown .submenu-indicator.submenu-indicator-up  {
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+span.submenu-indicator.submenu-indicator-up span {
+  border-color: #D5B887 !important;
+}
+
 }
 
 
+
+
+
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index:1; /* Background layer */
+}
+
+/* Content container styling */
+.content-container {
+  position: absolute;
+  z-index: 9 !important; /* Foreground layer */
+  color: #fff; /* Ensure content is visible over the video */
+  text-align: center;
+}
+.hero-banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.vedio-banner video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  animation: slideVideo 30s infinite linear;
+
+}
+
+.overlay2 {
+	background: url(../img/banner-7.jpeg);
+	background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background-attachment: fixed;
+    z-index: 0;
+    background-repeat: no-repeat;
+    -webkit-animation: kenburns-bottom-right 20s ease-out  infinite both;
+    animation: kenburns-bottom-right 20s ease-out infinite both;
+}
+
+
+
+@-webkit-keyframes kenburns-bottom-right {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 84%;
+            transform-origin: 84% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(20px, 15px);
+            transform: scale(1.25) translate(20px, 15px);
+    -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+  }
+}
+@keyframes kenburns-bottom-right {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 84%;
+            transform-origin: 84% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(20px, 15px);
+            transform: scale(1.25) translate(20px, 15px);
+    -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+  }
+}
