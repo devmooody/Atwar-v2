@@ -3139,6 +3139,178 @@ font-weight: 600;
 
 }
 
+   .partners-section {
+    padding: 48px 0 80px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.partners-section .slick-slide .inner {
+  margin: 0 10px;
+}
+
+.partners-section .slick-slide img {
+  max-height: 150px;
+  max-width: 150px;
+  object-fit: contain;
+}
+.partners-section .slick-slide  {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 130px;
+
+}
+
+
+#partnerlogos img {
+  max-height: 150px;       /* Scale image height to fit container */
+  max-width: 150px;        /* Scale image width to fit container */
+  object-fit: contain;    /* Ensure the entire image is visible */
+}
+
+
+
+
+.partners-title {
+    color: #BFA179;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 37px;
+}
+.partners-description {
+    color: #101114;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+
+
+
+/* Modal Dialog Centering */
+.founder-modal .modal-dialog {
+    max-width: 1024px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .founder-modal.modal{
+   background: #0000004D;
+
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    overflow-y: auto; /* Enable scrolling for long content */
+    max-height: calc(100vh - 80px); /* Limit content height */
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Close Button */
+  span.mod-close img {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    cursor: pointer;
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    display: flex;
+    flex-direction: row;
+    gap: 53px;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 48px 60px;
+    box-sizing: border-box;
+  }
+  
+  .profile-card p {
+    font-size: 14px;
+    line-height: 29px;
+    text-align: justify;
+    color: #101114;
+    font-weight: 400;
+  }
+  
+  .profile-card-right {
+    margin-bottom: 13px;
+  }
+  
+  .profile-card-right h2,
+  .profile-card-left h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #BFA179;
+  }
+  
+  .profile-card-left h2 {
+    margin-bottom: 10px;
+  }
+  
+  .profile-card-right h3,
+  .profile-card-left h3 {
+    font-size: 18px;
+    line-height: 26px;
+    color: #101114;
+    font-weight: 400;
+  }
+  
+  .profile-card img {
+    border-radius: 10px;
+    margin-bottom: 24px;
+    max-height: 401px;
+    width: auto;
+  }
+  
+  /* Profile Details Section */
+  .profile-card .details {
+    font-size: 14px;
+    line-height: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+    padding-right: 10px;
+  }
+  
+  .profile-card-list {
+    color: #101114;
+    line-height: 23px;
+    margin: 24px 0;
+  }
+  
+  .profile-card-list p {
+    font-weight: 300;
+  }
+
+
+  /* Close Button Styling */
+  .profile-card .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+  
 
 .vision {
     padding:0;
@@ -3388,10 +3560,7 @@ bottom:-40px;
       margin-top: 50px;
     }
   
-    span.mod-close img {
-        right: 15px;
-        top: 15px;
-    }
+  
     
     
     .profile-card-right h2 {
@@ -3529,7 +3698,8 @@ bottom:-40px;
       margin-top: 5px;
     }
     .profile-card img {
-      max-height: 300px;
+      max-height: max-content;
+              width: 100%;
   
   }
   .header.header-transparent.custom-edit{
@@ -3637,59 +3807,6 @@ bottom:-40px;
 
 
 /*------------- Partners Section Styling Start -------------*/
-
-   .partners-section {
-    padding: 48px 0 80px 0;
-    text-align: center;
-    background-color: #fff;
-}
-
-.partners-section .slick-slide .inner {
-  margin: 0 10px;
-}
-
-.partners-section .slick-slide img {
-  max-height: 150px;
-  max-width: 150px;
-  object-fit: contain;
-}
-.partners-section .slick-slide  {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 130px;
-
-}
-
-
-#partnerlogos img {
-  max-height: 150px;       /* Scale image height to fit container */
-  max-width: 150px;        /* Scale image width to fit container */
-  object-fit: contain;    /* Ensure the entire image is visible */
-}
-
-
-
-
-.partners-title {
-    color: #BFA179;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: capitalize;
-    line-height: 37px;
-}
-.partners-description {
-    color: #101114;
-    margin-bottom: 70px;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 300;
-    text-transform: capitalize;
-}
-
-
 
 
 /*------------- Partners Section Styling End -------------*/
@@ -4164,6 +4281,7 @@ margin-bottom: 0;
 bottom:20px;
 
             }
+      
           .founder-card {
 
             margin-bottom: 40px;
@@ -4193,124 +4311,7 @@ section{
 
         /*------------- Profile Start -------------*/
 
-/* Modal Dialog Centering */
-.founder-modal .modal-dialog {
-    max-width: 1024px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  .founder-modal.modal{
-   background: #0000004D;
 
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    overflow-y: auto; /* Enable scrolling for long content */
-    max-height: calc(100vh - 80px); /* Limit content height */
-    border-radius: 10px;
-    box-sizing: border-box;
-  }
-  
-  /* Close Button */
-  span.mod-close img {
-    display: flex;
-    justify-content: right;
-    position: absolute;
-    right: 50px;
-    top: 40px;
-    cursor: pointer;
-  }
-  
-  /* Profile Card */
-  .profile-card {
-    display: flex;
-    flex-direction: row;
-    gap: 53px;
-    align-items: flex-start;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 48px 60px;
-    box-sizing: border-box;
-  }
-  
-  .profile-card p {
-    font-size: 14px;
-    line-height: 29px;
-    text-align: justify;
-    color: #101114;
-    font-weight: 400;
-  }
-  
-  .profile-card-right {
-    margin-bottom: 13px;
-  }
-  
-  .profile-card-right h2,
-  .profile-card-left h2 {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 26px;
-    color: #BFA179;
-  }
-  
-  .profile-card-left h2 {
-    margin-bottom: 10px;
-  }
-  
-  .profile-card-right h3,
-  .profile-card-left h3 {
-    font-size: 18px;
-    line-height: 26px;
-    color: #101114;
-    font-weight: 400;
-  }
-  
-  .profile-card img {
-    border-radius: 10px;
-    margin-bottom: 24px;
-    max-height: 401px;
-    width: auto;
-  }
-  
-  /* Profile Details Section */
-  .profile-card .details {
-    font-size: 14px;
-    line-height: 20px;
-    overflow-y: auto;
-    flex-grow: 1;
-    padding-right: 10px;
-  }
-  
-  .profile-card-list {
-    color: #101114;
-    line-height: 23px;
-    margin: 24px 0;
-  }
-  
-  .profile-card-list p {
-    font-weight: 300;
-  }
-
-
-  /* Close Button Styling */
-  .profile-card .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-  }
-  
   /* Responsive Adjustments */
 
   
@@ -4718,6 +4719,20 @@ section.contact-holder .Established {
     animation: kenburns-bottom-right 20s ease-out infinite both;
 }
 
+.overlay2::before {
+	background: url(../img/banner-7.jpeg);
+	background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background-attachment: fixed;
+    z-index: 0;
+    background-repeat: no-repeat;
+    -webkit-animation: kenburns-bottom-right 20s ease-out  infinite both;
+    animation: kenburns-bottom-right 20s ease-out infinite both;
+}
+
 
 
 @-webkit-keyframes kenburns-bottom-right {
@@ -5059,20 +5074,16 @@ ul.nav-menu img , .nav-logo{
   opacity: 1 !important;
   -webkit-transform: none !important;
   transform: none !important;
-  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.28s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.38s;
 
 }
 .nav-menus-wrapper ul li  ,  .nav-menus-wrapper .nav-contact a  , .accordion-collapse  , .nav-menus-wrapper .nav-menus-wrapper-close-button  {
   opacity: 0 ;
-  -webkit-transform: translate3d(0, 10%, 0);
-  transform: translate3d(0, 10%, 0);
-  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.28s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.38s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
 
 }
 
-.nav-menus-wrapper .nav-contact a{
-  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.28s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.38s;
-}
+
 ul.nav-menu li.nav-submenu-open a:last-child {
   padding-bottom: 30px;
 }
@@ -5223,7 +5234,7 @@ padding:20px 15px 0 15px;
 padding:0 20px 20px 20px;
 }
 button.accordion-button{
-  padding:20px 20px;
+  padding:25px 20px;
 }
 .submenu-indicator-chevron {
 
@@ -5276,6 +5287,10 @@ display:none;
   font-size: 16px;
   }
 
+          span.mod-close img {
+        right: 15px;
+        top: 15px;
+    }
 .hero-banner p{
  font-size: 16px;
  line-height: 26px;
