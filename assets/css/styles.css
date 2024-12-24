@@ -305,9 +305,11 @@ p {
     border: 5px solid #BFA179;
 }
 .gray-bg{
-	background:#fff url(../img/partners/gray-bg.png);
+	background-image:#fff url(../img/partners/gray-bg.png);
 	background-size: 100%;
     background-position: center;
+    background-attachment: fixed;
+
 }
 .gray{
 	background:#f7f9fc !important;
@@ -2994,7 +2996,7 @@ line-height: 30px;
    /*------------ About Page ----------------*/
 
    .content-banner.about {
-    background: url("../img/About/bg.png");
+    background-image: url("../img/About/bg.png");
   }
   
    /* Content Banner Styles */
@@ -4342,7 +4344,9 @@ font-size: 17px;
 padding:60px 0;
 }
    .content-banner.our-services {
-    background: url("../img/OurServices/banner.png");
+    background-image: url("../img/OurServices/banner.png");
+    background-attachment: fixed;
+
   }
   
   .our-services {
@@ -4592,10 +4596,10 @@ width: 37px;
 
 
    .content-banner.contact {
-    background: url("../img/Contact/New\ Project\ \(9\).png");
+    background-image: url("../img/Contact/New\ Project\ \(9\).png");
     background-size: 100% 100%;
     background-position: right;
-    
+    background-attachment: fixed;
   }
   
   .contact-holder{
@@ -4710,7 +4714,7 @@ section.contact-holder .Established {
 }
 
 .overlay2 {
-	background: url(../img/banner-7.jpeg);
+	background-image: url(../img/banner-7.jpeg);
 	background-size: cover;
     background-position: center;
     position: absolute;
@@ -4724,7 +4728,7 @@ section.contact-holder .Established {
 }
 
 .overlay2::before {
-	background: url(../img/banner-7.jpeg);
+	background-image: url(../img/banner-7.jpeg);
 	background-size: cover;
     background-position: center;
     position: absolute;
@@ -4769,7 +4773,7 @@ section.contact-holder .Established {
 }
 
 .why-attwar {
-	background:url(../img/OurServices/why.png);
+	background-image:url(../img/OurServices/why.png);
   background-size: 100%;
   background-position: center;
   background-attachment: fixed;  /* Prevents the background from moving */
