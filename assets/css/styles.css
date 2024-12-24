@@ -93,13 +93,13 @@ font-weight: 300;
   padding:48px 0;
 }
 #preloader {
-  /* position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #f7f7f7;
-  z-index: 999999; */
+  z-index: 999999;
 }
 /* Video background styling */
 .hero-banner {
@@ -161,7 +161,7 @@ font-weight: 300;
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background:#8A764B;
+  background:#BFA179;
   -webkit-animation: preloader 1.3s linear infinite;
   animation: preloader 1.3s linear infinite;
 }
