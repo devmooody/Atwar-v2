@@ -2,11 +2,10 @@
 	"use strict";
 		
 		$(window).on('load', function () {
-			$('#preloader').delay(50).fadeOut('slow');
-			$('body').delay(50).css({ 'overflow': 'visible' });
+			$('#preloader').delay(200).fadeOut('slow');
+			$('body').delay(200).css({ 'overflow': 'visible' });
 		})
 		
-
 	
 		// Tooltip
 		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
