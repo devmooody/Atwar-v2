@@ -605,7 +605,8 @@ ul {
 .menu__link,
 .navigation,
 .navigation * {
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent; 
+    margin:0;
 }
 
 .navigation,
@@ -784,7 +785,7 @@ nav a {
     float: none
 }
 
-.nav-menu>li>a {
+.nav-menu>li>a , .nav-contact li a{
     padding:0;
     display: inline-block;
     color:#fff;
@@ -793,6 +794,7 @@ nav a {
    padding:13px 0;
     letter-spacing: 1px;
 }
+
 
 .nav-menu li.active {
     margin-right: 30px;
@@ -1255,7 +1257,7 @@ li.nav-submenu-open  a{
 
 }
 .nav-menus-wrapper.nav-menus-wrapper-open {
-  left: 10PX;
+  left: 10px;
 }
 
   .nav-menu {
@@ -2367,13 +2369,15 @@ footer ul.header-bottom-social li a:hover, footer ul.header-bottom-social li a:f
     padding: 10px 63px;
 	}
 	
-  .nav-menu>li>a:hover {
+  .nav-menu>li>a:hover , .nav-contact li a:hover ,   .header-fixed .nav-menu li a:hover , .nav-contact li a:hover {
     color: #D5B887 !important;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 	}
+
+
 
   
 	.header.header-transparent.dark .nav-brand, .header.header-transparent.dark .nav-brand:focus, .header.header-transparent.dark .nav-brand:hover, .header.header-transparent.dark .nav-menu>li>a {
@@ -2402,7 +2406,7 @@ footer ul.header-bottom-social li a:hover, footer ul.header-bottom-social li a:f
 	.header.header-transparent.header-fixed .nav-menu>.active>a .submenu-indicator-chevron, .header.header-transparent.header-fixed .nav-menu>.focus>a .submenu-indicator-chevron, .header.header-transparent.header-fixed .nav-menu>li:hover>a .submenu-indicator-chevron {
 		border-color: transparent #D5B887 #D5B887 transparent;
 	}
-	.header.header-transparent.header-fixed .nav-brand, .header.header-transparent.header-fixed .nav-brand:focus, .header.header-transparent.header-fixed .nav-brand:hover, .header.header-transparent.header-fixed .nav-menu>li>a  , .header-fixed .nav-contact> a {
+	.header.header-transparent.header-fixed .nav-brand, .header.header-transparent.header-fixed .nav-brand:focus, .header.header-transparent.header-fixed .nav-brand:hover, .header.header-transparent.header-fixed .nav-menu>li>a  , .header-fixed .nav-contact li a {
     color: #000; /* Change to black when header is fixed */
   }
 	
@@ -2734,7 +2738,7 @@ color: #fff;
 
 .Secondary-header a , .Secondary-header li{
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.2px;
     font-weight: 500;
 }
@@ -5070,13 +5074,13 @@ ul.nav-menu img , .nav-logo{
 
 
 
-.nav-menus-wrapper.nav-menus-wrapper-open ul li , .nav-menus-wrapper-open .nav-contact a , .accordion-collapse.show , li.nav-submenu-open , .nav-menus-wrapper-open .nav-menus-wrapper-close-button{
+.nav-menus-wrapper.nav-menus-wrapper-open ul li  , .accordion-collapse.show , li.nav-submenu-open , .nav-menus-wrapper-open .nav-menus-wrapper-close-button{
   opacity: 1 !important;
   -webkit-transform: none !important;
   transform: none !important;
 
 }
-.nav-menus-wrapper ul li  ,  .nav-menus-wrapper .nav-contact a  , .accordion-collapse  , .nav-menus-wrapper .nav-menus-wrapper-close-button  {
+.nav-menus-wrapper ul li  , .accordion-collapse  , .nav-menus-wrapper .nav-menus-wrapper-close-button  {
   opacity: 0 ;
   -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
@@ -5104,10 +5108,11 @@ li.active- a {
   font-weight: 400 !important;
   font-size: 20px !important;
 }
-.navigation-portrait .nav-menu>li>a , .nav-contact a{
+.navigation-portrait .nav-menu>li>a , .nav-contact li a{
   font-size: 20px;
   font-weight: 400;
  font-family: 'Dubai';
+ color:#fff;
 
 }
 .navigation-portrait .nav-menu>li , .navigation-portrait .nav-menu>li:last-child  {
@@ -5248,6 +5253,11 @@ button.accordion-button{
 
 }
 
+ .nav-contact li a{
+ padding:0 0;
+
+}
+
 .nav-submenu-open span.submenu-indicator-chevron{
   -ms-transform: rotate(225deg);
   transform: rotate(225deg);
@@ -5293,7 +5303,7 @@ display:none;
     }
 .hero-banner p{
  font-size: 16px;
- line-height: 26px;
+ line-height: 22px;
 }
 .gray-bg{
     background: #f7f9fc;
@@ -5324,8 +5334,8 @@ display:none;
   }
   
   .hero-banner h2, .main-banner h1{
-    font-size: 29px !important;
-    width: 90%;
+    font-size: 24px !important;
+    width: 100%;
     margin: auto;
   }
 }
