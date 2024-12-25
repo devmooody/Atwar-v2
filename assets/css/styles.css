@@ -715,14 +715,24 @@ nav a {
   background-color: #fff;
   z-index: 20000;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  transition-duration: .8s;
-  transition-timing-function: ease;
   padding: 14px;
   margin: 10px auto;
   align-items: center;
   border-radius: 5px;
   max-width: 450px;
+}
+
+
+.nav-submenu.zoom-effect {
+  transform: scale(0);  /* Start with the submenu scaled down */
+  opacity: 0;            /* Start with the submenu invisible */
+  transition: all 0.3s ease-in-out;
+}
+
+/* On show, scale it back to normal size */
+.nav-menus-wrapper-open {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .navigation-portrait .nav-menus-wrapper.nav-menus-wrapper-right {
@@ -3720,6 +3730,27 @@ bottom:-40px;
     .hidden-md {
       display: none !important; 
     }
+    @keyframes fadeInUp {
+      0% {
+          opacity: 0;
+          -webkit-transform: translate3d(0, 10%, 0); /* Slightly down (you can adjust the value) */
+          transform: translate3d(0, 10%, 0);
+      }
+      100% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+      }
+  }
+  
+  .fadeInUp {
+      -webkit-animation-name: fadeInUp;
+      animation-name: fadeInUp;
+      -webkit-animation-duration: 0.5s; /* Adjust duration if needed */
+      animation-duration: 0.5s;
+      -webkit-animation-timing-function: ease-out; /* Optional: smooth out the transition */
+      animation-timing-function: ease-out;
+  }
   }
   
   /* Media Query for Mobile (max-width: 576px) */
@@ -5458,3 +5489,4 @@ height:590px;
   }
   
   
+
