@@ -2749,9 +2749,6 @@ color: #fff;
  padding:18px 33px;
    position: relative;
    height: 86px;
-   position: fixed;
-   height: 86px;
-   top: 0;
    z-index: 2;
    width: 100%;
 }
@@ -3017,6 +3014,8 @@ line-height: 30px;
 
    .content-banner.about {
     background-image: url("../img/About/bg.png");
+    background-attachment: fixed;
+
   }
   
    /* Content Banner Styles */
@@ -3073,7 +3072,6 @@ line-height: 30px;
   @media (max-width: 1200px) {
     .content-banner {
       height: 500px;
-      background-size: cover;
     }
     .content-heading {
       font-size: 40px;
