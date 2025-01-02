@@ -1283,6 +1283,10 @@ li.nav-submenu-open  a{
     margin-top: 10px;
     padding: 0 15px 12px 26px;
   }
+
+  .navigation-portrait .submenu-indicator-chevron {
+    top: 12px;
+}
 }
 
 
