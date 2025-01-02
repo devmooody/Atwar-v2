@@ -1450,7 +1450,7 @@ nav a {
 .Header-logo img {
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 0; /* Spacing below the logo */
-  max-height: 178px;
+  max-height: 177px;
 }
 
 /*===============================
