@@ -269,21 +269,21 @@ a.white-link {
   border-radius: 4px; }
 
   .scroll-target {
-    scroll-margin-top: 20vh; /* Offset by 20% of viewport height */
+    
   }
   #team{
-  scroll-margin-top: 19vh; /* Offset by 20% of viewport height */
+  
 
   }
 
   .scroll-target2 {
-    scroll-margin-top: 30vh; /* Offset by 20% of viewport height */
+   
   }
   #whoweare {
-    scroll-margin-top: 28vh; /* Offset by 20% of viewport height */
+  
   }
   #founder {
-    scroll-margin-top: 25vh; /* Offset by 20% of viewport height */
+   
   }
  
 html body .mdi:before,
@@ -951,9 +951,7 @@ border-color: #D5B887;
 }
 
 .no-scroll {
-    width: 100%;
-    height: 100%;
-    overflow: hidden
+
 }
 
 
@@ -1452,6 +1450,7 @@ nav a {
 .Header-logo img {
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 0; /* Spacing below the logo */
+  max-height: 178px;
 }
 
 /*===============================
@@ -2350,6 +2349,7 @@ footer ul.header-bottom-social li a:hover, footer ul.header-bottom-social li a:f
 	animation-duration: 0.5s;
 	-webkit-animation-name: slideInDown;
 	animation-name: slideInDown;
+  height: 86px;
 	}
 	.filter_search_opt {
 		display: none;
@@ -2748,6 +2748,12 @@ flex-direction: column;
 color: #fff;
  padding:18px 33px;
    position: relative;
+   height: 86px;
+   position: fixed;
+   height: 86px;
+   top: 0;
+   z-index: 2;
+   width: 100%;
 }
 
 

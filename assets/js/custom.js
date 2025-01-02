@@ -74,7 +74,7 @@
 						}))
 					},
 					p = function() {
-						n("body").removeClass("no-scroll"), u.settings.overlay && n(t).find(".nav-overlay-panel").fadeOut(400, function() {
+						n("body").removeClass("no-scroll"), u.settings.overlay && n(t).find(".nav-overlay-panel").fadeOut(0, function() {
 							n(this).remove()
 						})
 					};
@@ -169,7 +169,7 @@
 		$(window).scroll(function() {    
 			var scroll = $(window).scrollTop();
 	
-			if (scroll >= 50) {
+			if (scroll >= 30) {
 				$(".header").addClass("header-fixed");
 			} else {
 				$(".header").removeClass("header-fixed");
