@@ -823,6 +823,10 @@ nav a {
 .nav-menu>.focus>a,
 .nav-menu>li:hover>a {
     color:#D5B887 !important;
+} 
+
+li.active-contact a{
+  color:#D5B887 !important;
 }
 .header-transparent .nav-menu>.active>a,
 .header-transparent .nav-menu>.focus>a,
