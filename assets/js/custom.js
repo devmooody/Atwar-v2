@@ -89,6 +89,13 @@
 				}, u.toggleSearch = function() {
 					"none" == n(t).find(".nav-search").find("form").css("display") ? (n(t).find(".nav-search").find("form").slideDown(), n(t).find(".nav-submenu").fadeOut(200)) : n(t).find(".nav-search").find("form").slideUp()
 				};
+				n(t).on('click', '.nav-menus-wrapper.nav-menus-wrapper-open ul li', function() {
+					// Remove the 'nav-menus-wrapper-open' class to close the menu
+					n(t).find('.nav-menus-wrapper').removeClass('nav-menus-wrapper-open');
+					
+					// Change the background of the 'nav-overlay-panel' to red
+					n(t).find('.nav-overlay-panel').css('background-color', 'transparent');
+				});
 				var m = function() {
 						u.settings.responsive ? (g() <= u.settings.mobileBreakpoint && r > u.settings.mobileBreakpoint && (n(t).addClass("navigation-portrait").removeClass("navigation-landscape"), D()), g() > u.settings.mobileBreakpoint && d <= u.settings.mobileBreakpoint && (n(t).addClass("navigation-landscape").removeClass("navigation-portrait"), k(), p(), u.hideOffcanvas()), r = g(), d = g()) : k()
 					},
@@ -778,6 +785,8 @@
 				searchTypeButtons();
 			});
 		}
+		
+
 		
 
 		
