@@ -894,7 +894,7 @@ nav a {
 }
 
 .navigation-portrait .submenu-indicator {
-    width:auto;
+    width:80px;
     height: 44px;
     margin-top: 0;
     position: absolute;
