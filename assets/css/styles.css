@@ -4022,7 +4022,7 @@ bottom:-40px;
   
     .property-overview {
       padding: 15px;
-      margin-top: 40px;
+      margin-top: 10px;
       margin-left: 0;
     }
   
@@ -5265,6 +5265,7 @@ padding:20px 15px 0 15px;
 .data-overlay {
   padding: 20px 20px;
   margin-left: 0;
+  margin-top: 30px;
 
 }
 
