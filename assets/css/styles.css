@@ -2926,6 +2926,7 @@ p.date-info{
   font-weight: 300;
   color: #101114;
   font-size: 15px;
+  min-width: 30%;
 }
 
 .property-value {
