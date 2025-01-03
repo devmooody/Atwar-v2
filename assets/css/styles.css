@@ -4021,18 +4021,19 @@ bottom:-40px;
     }
   
     .property-overview {
-      padding: 15px 10px;
+      padding: 15px 5px;
       margin-top: 10px;
       margin-left: 0;
     }
   
     .property-row {
       flex-direction: row; /* Stack labels and values on smaller screens */
-      align-items: flex-start;
+      align-items: center;
     }
   
     .property-value {
-      margin-top: 5px;
+      margin-top: 0px;
+      font-size: 14px;
     }
     .profile-card img {
       max-height: max-content;
