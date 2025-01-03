@@ -3680,7 +3680,7 @@ bottom:-40px;
       background-size: 100%;
       background-position: center;
       background-attachment: fixed;  /* Prevents the background from moving */
-      padding: 60px 0 80px 0;  /* Adjust padding as needed */
+      padding: 80px 0 80px 0;  /* Adjust padding as needed */
     }
     
     .why-attwar h3 {
@@ -5516,3 +5516,13 @@ height:590px;
     filter: blur(10px);
     opacity: 0;
   }
+
+  /* This works when you're on the same page */
+:target {
+  scroll-margin-top: 120px !important;
+}
+
+
+#whoweare{
+  scroll-margin-top: 150px !important;
+}

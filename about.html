@@ -508,16 +508,19 @@
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/wow.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <scrip src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></scrip>
 
 
     <!-- ============================================================== -->
     <!-- This page plugins -->
     <!-- ============================================================== -->
-    <script>
-    new WOW().init(); 
-    // our-Founder
-    $('.slick.marquee').slick({
+
+
+<script>
+
+  new WOW().init();
+
+  $('.slick.marquee').slick({
     speed: 1500,
     autoplay: true,
     autoplaySpeed: 0,
@@ -531,22 +534,43 @@
     arrows: false,
     buttons: false,
     responsive: [
-    {
-    breakpoint: 768,
-    settings: {
-    slidesToShow:2,
-    }
-    },
-    {
-    breakpoint: 480,
-    settings: {
-    slidesToShow:2,
-    }
-    }
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
     ]
-    });
+  });
 
-   
-    </script
+  $(document).ready(function() {
+    // Check if the page has a hash in the URL
+    if (window.location.hash) {
+      // Get the target section from the hash (e.g., #founder)
+      var targetHash = window.location.hash;
+
+      // Find the target element (section with the corresponding ID)
+      var targetElement = $(targetHash);
+
+      // Check if the target element exists
+      if (targetElement.length) {
+        // Get the height of the header
+        var headerHeight = $(".header").outerHeight();
+
+        // Scroll the page to the target element with an offset for the header
+        $('html, body').animate({
+          scrollTop: targetElement.offset().top - headerHeight - 120  // Adjust with 120px margin
+        }, 600);
+      }
+    }
+  });
+</script>
+
   </body>
 </html>

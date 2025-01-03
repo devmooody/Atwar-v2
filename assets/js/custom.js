@@ -175,7 +175,11 @@
 				$(".header").removeClass("header-fixed");
 			}
 		});
+
 		
+		
+		
+
 		// Script For Select Adult & Child Number
 		$(function() {
 	
