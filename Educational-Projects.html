@@ -54,12 +54,12 @@
             <li class="active">
               <a href="JavaScript:void(0);">Our Projects</a>
               <ul class="nav-dropdown nav-submenu">
+               <li><a href="Mixed-use-project.html">Mixed-use Projects</a></li>
                 <li><a href="Industrial-Projects.html">Industrial Projects</a></li>
                 <li><a href="Educational-Projects.html">Sample of Educational Projects</a></li>
                 <li><a href="villa-projects.html">Sample of Villa Projects</a></li>
                 <li><a href="Educational-Projects.html#Religious">Sample of Religious Projects</a></li>
                 <li><a href="Interior-Design.html">Interior Design</a></li>
-                <li><a href="Mixed-use-project.html">Mixed-use Projects</a></li>
               </ul>
             </li>
           </ul>
@@ -703,6 +703,27 @@
     <!-- ============================================================== -->
     <script>
     new WOW().init(); 
+    $(document).ready(function() {
+    // Check if the page has a hash in the URL
+    if (window.location.hash) {
+      // Get the target section from the hash (e.g., #founder)
+      var targetHash = window.location.hash;
+
+      // Find the target element (section with the corresponding ID)
+      var targetElement = $(targetHash);
+
+      // Check if the target element exists
+      if (targetElement.length) {
+        // Get the height of the header
+        var headerHeight = $(".header").outerHeight();
+
+        // Scroll the page to the target element with an offset for the header
+        $('html, body').animate({
+          scrollTop: targetElement.offset().top - headerHeight - 130  // Adjust with 120px margin
+        }, 600);
+      }
+    }
+  });
     </script
   </body>
 </html>

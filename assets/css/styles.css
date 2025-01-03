@@ -5522,7 +5522,7 @@ height:590px;
 }
 
 
-#whoweare{
+#whoweare , #Religious{
   scroll-margin-top: 150px !important;
 }
 
@@ -5532,3 +5532,4 @@ height:590px;
 #founder{
   scroll-margin-top: 80px !important;
 }
+
