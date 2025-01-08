@@ -3358,7 +3358,7 @@ height: 130px;
   top: 36%;
   right: 0;
   width: 410px;
-  height: 150px;
+  height: 110px;
   border-left: none;
   border-bottom: none;
   margin-left: 32px;
@@ -3371,7 +3371,7 @@ height: 130px;
     top: 10%;
     right: 99%;
     width: 410px;
-    height: 150px;
+    height: 110px;
     border-right: none;
     border-top: none;
     margin-right: 40px;
@@ -4163,7 +4163,75 @@ bottom:-40px;
   }
   
 /*------------- Meet Team End -------------*/
+/*------------- Industrial  Start Slick -------------*/
 
+
+ /* Styling the slick dots */
+/* Styling the slick dots */
+.Industrial .slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* Uniform spacing between all dots */
+  margin-top: 20px; /* Adjust top margin if needed */
+  padding: 0;
+  list-style: none;
+}
+
+.Industrial .slick-dots li {
+  position: relative;
+  display: inline-block;
+}
+
+.Industrial .slick-dots li button {
+  width: 10px; 
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent; 
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.Industrial .slick-dots li button:before {
+  content: '';
+  display: block;
+  width: 31px;
+  height: 5px;
+  border-radius: 8px;
+  background-color: #FFF4F4C7;
+  position: relative;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+/* Active dot styling */
+.Industrial .slick-dots li.slick-active button:before {
+  content: '';
+  display: block;
+  width: 31px;
+  height: 7px;
+  border-radius: 8px;
+  background-color: #BFA179FA;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Add uniform margins around inactive dots */
+.Industrial .slick-dots li:not(.slick-active) {
+
+}
+
+
+
+.Industrial  .slick-dots li {
+  margin: 0; /* Reset any browser defaults */
+  margin-right: 25px;
+}
+
+
+/*------------- Industrial  Slick End -------------*/
 
 
 
@@ -5056,6 +5124,8 @@ padding:10px 15px;
 }
 .header img {
 margin-left: 0;
+max-height: 66px;
+
 }
 .founder-title{
   text-align: center;
