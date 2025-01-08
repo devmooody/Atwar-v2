@@ -576,6 +576,7 @@ font-weight: 600;
 	display:inline-flex;
 	align-items:center;
 }
+
 .header.header-transparent .nav-brand.text-logo.exchange, .header.header-transparent .nav-brand.text-logo.exchange h5 {
     color: #ffffff !important;
 }
@@ -584,13 +585,13 @@ font-weight: 600;
 }
 .header.header-transparent.header-fixed .nav-brand.text-logo.exchange h5, .header .navigation.navigation-portrait .nav-brand.text-logo.exchange h5 , .header.Secondary-header.header-fixed a ,
 .header.Secondary-header.header-fixed .submenu-indicator-chevron{
-	color:#101114 !important;
+	color:#101114;
 }
 header.Secondary-header.header-fixed a:hover{
   color:#D5B887 !important;
 }
 .header.Secondary-header.header-fixed .submenu-indicator-chevron{
-  border-color: #D5B887;
+border-color: #D5B887;
 }
 .header.Secondary-header .submenu-indicator-chevron{
   border-color:#fff;
@@ -2448,6 +2449,8 @@ footer ul.header-bottom-social li a:hover, footer ul.header-bottom-social li a:f
 	}
 	.main-banner.image-banner, .hero-header, .hero-banner{
 		min-height:794px;
+    max-height: 850px;
+
 	}
 
 	.hero-header.min-banner{
@@ -5009,7 +5012,7 @@ width: 37px;
 
 
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 
 .hidden-me {
   display: none !important; 
