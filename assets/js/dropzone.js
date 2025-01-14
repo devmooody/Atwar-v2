@@ -503,11 +503,11 @@ var Dropzone = function (_Emitter) {
           if (chunk) {
             return {
               dzuuid: chunk.file.upload.uuid,
-              dzchunkindex: chunk.index,
+              dzchunkindex: chunk./,
               dztotalfilesize: chunk.file.size,
               dzchunksize: this.options.chunkSize,
               dztotalchunkcount: chunk.file.upload.totalChunkCount,
-              dzchunkbyteoffset: chunk.index * this.options.chunkSize
+              dzchunkbyteoffset: chunk./ * this.options.chunkSize
             };
           }
         },
@@ -1411,7 +1411,7 @@ var Dropzone = function (_Emitter) {
     }
 
     // @options.paramName can be a function taking one parameter rather than a string.
-    // A parameter name for a file is obtained simply by calling this with an index number.
+    // A parameter name for a file is obtained simply by calling this with an / number.
 
   }, {
     key: "_getParamName",
@@ -2291,7 +2291,7 @@ var Dropzone = function (_Emitter) {
 
             file.upload.chunks[chunkIndex] = {
               file: file,
-              index: chunkIndex,
+              /: chunkIndex,
               dataBlock: dataBlock, // In case we want to retry.
               status: Dropzone.UPLOADING,
               progress: 0,
@@ -3259,7 +3259,7 @@ var drawImageIOSFix = function drawImageIOSFix(ctx, img, sx, sy, sw, sh, dx, dy,
 
 // Based on MinifyJpeg
 // Source: http://www.perry.cz/files/ExifRestorer.js
-// http://elicon.blog57.fc2.com/blog-entry-206.html
+// http://elicon.blog57.fc2.com/blog-entry-206
 
 var ExifRestore = function () {
   function ExifRestore() {
