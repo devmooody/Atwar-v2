@@ -503,11 +503,11 @@ var Dropzone = function (_Emitter) {
           if (chunk) {
             return {
               dzuuid: chunk.file.upload.uuid,
-              dzchunkindex: chunk./,
+              dzchunkindex: chunk.index,
               dztotalfilesize: chunk.file.size,
               dzchunksize: this.options.chunkSize,
               dztotalchunkcount: chunk.file.upload.totalChunkCount,
-              dzchunkbyteoffset: chunk./ * this.options.chunkSize
+              dzchunkbyteoffset: chunk.index * this.options.chunkSize
             };
           }
         },
@@ -1411,7 +1411,7 @@ var Dropzone = function (_Emitter) {
     }
 
     // @options.paramName can be a function taking one parameter rather than a string.
-    // A parameter name for a file is obtained simply by calling this with an / number.
+    // A parameter name for a file is obtained simply by calling this with an index number.
 
   }, {
     key: "_getParamName",
@@ -2291,7 +2291,7 @@ var Dropzone = function (_Emitter) {
 
             file.upload.chunks[chunkIndex] = {
               file: file,
-              /: chunkIndex,
+              index: chunkIndex,
               dataBlock: dataBlock, // In case we want to retry.
               status: Dropzone.UPLOADING,
               progress: 0,

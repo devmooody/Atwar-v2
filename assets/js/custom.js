@@ -123,7 +123,7 @@
 							var i = n(e).children(".megamenu-tabs-nav").children("li"),
 								a = n(e).children(".megamenu-tabs-pane");
 							n(i).on("click.tabs touchstart.tabs", function(e) {
-								e.stopPropagation(), e.preventDefault(), n(i).removeClass("active"), n(this).addClass("active"), n(a).hide(0).removeClass("active"), n(a[n(this)./()]).show(0).addClass("active")
+								e.stopPropagation(), e.preventDefault(), n(i).removeClass("active"), n(this).addClass("active"), n(a).hide(0).removeClass("active"), n(a[n(this).index()]).show(0).addClass("active")
 							})
 						}
 						if (n(t).find(".megamenu-tabs").length > 0)
@@ -692,7 +692,7 @@
 				  setTimeout(function() { self.wrap.addClass('mfp-image-loaded'); }, 16);
 				},
 				beforeClose: function() {
-				  $carousel.slick('slickGoTo', parseInt(this./));
+				  $carousel.slick('slickGoTo', parseInt(this.index));
 				}
 			  }
 			});
